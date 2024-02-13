@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("./vazir.woff2") format("woff2");
+    font-style: normal;
+}
+
+body,
+html {
+    background-color: #212121;
+    font-family: Vazir;
+}
+
+.main {
+    background-image: url("./computer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100vh;
+}
+
+.text {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    padding: 15px 20px;
+    color: white;
+    background-color: rgb(33, 33, 33, 0.6);
+    border-radius: 0.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        background-image: url("./mobile.jpg");
+    }
+}
